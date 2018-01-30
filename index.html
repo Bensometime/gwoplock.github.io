@@ -4,8 +4,12 @@
 		<meta charset="UTF-8">
 		<title>Gwoplock's portfolio</title>
 		<marquee behavior="alternate" direction="right"><h1>Gwolock (Garrett Battaglia)'s portfolio site</h1></marquee>
+		<link rel="stylesheet" href="theme.css">
 	</head>
-	<body>
+	<body class="rainbow">
+		<script>
+			console.error("I made an error")
+		</script>
 		<h2>This is a joke page...</h2>
 		<p>
 		<hr>
@@ -21,8 +25,23 @@
 			</li>
 			<li>
 				This 90's webpage
-				<p> &nbsp;&nbsp;&nbsp;&nbsp; Aren't I a great webdev? But hey, no JS errors...
+				<p> &nbsp;&nbsp;&nbsp;&nbsp; Aren't I a great webdev? But hey, no* JS errors...
 			</li>
 		</ul>
+		<p>
+			<img src="img/hot.gif"></img>
+			<img src="img/thanks.gif"></img>
+		</p>
+		<script>
+			var image = 1;
+			setInterval(function(){
+				image *= -1;
+				if(image === 1){
+					document.body.style.backgroundImage="url(img/thanks.gif)";
+				} else {
+					document.body.style.backgroundImage="url(img/grid.gif)";
+				}
+			},2000)
+		</script>
 	</body>
 </html>
