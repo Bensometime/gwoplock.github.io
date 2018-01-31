@@ -1,47 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: black; color:red;">
+<html lang="en" style="color:red; background-image:url(img/grid.gif); ">
 	<head>
 		<meta charset="UTF-8">
 		<title>Gwoplock's portfolio</title>
-		<marquee behavior="alternate" direction="right"><h1>Gwolock (Garrett Battaglia)'s portfolio site</h1></marquee>
+		<marquee behavior="alternate" direction="right" class="rainbow"><h1>Gwolock (Garrett Battaglia)'s portfolio
+			site</h1></marquee>
 		<link rel="stylesheet" href="theme.css">
 	</head>
-	<body class="rainbow">
+	<body>
 		<script>
-			console.error("I made an error")
+            console.error("I made an error")
 		</script>
-		<h2>This is a joke page...</h2>
-		<p>
-		<hr>
-		<h2> projects </h2>
-		<ul>
-			<li>
-				ExOS
-				<p> &nbsp;&nbsp;&nbsp;&nbsp; An OS
-			</li>
-			<li>
-				Coldbrew
-				<p> &nbsp;&nbsp;&nbsp;&nbsp; A package manager
-			</li>
-			<li>
-				This 90's webpage
-				<p> &nbsp;&nbsp;&nbsp;&nbsp; Aren't I a great webdev? But hey, no* JS errors...
-			</li>
-		</ul>
-		<p>
-			<img src="img/hot.gif"></img>
-			<img src="img/thanks.gif"></img>
-		</p>
-		<script>
-			var image = 1;
-			setInterval(function(){
-				image *= -1;
-				if(image === 1){
-					document.body.style.backgroundImage="url(img/thanks.gif)";
-				} else {
-					document.body.style.backgroundImage="url(img/grid.gif)";
-				}
-			},2000)
-		</script>
+		<table>
+			<tr>
+				<td>
+					<h2>This is a joke page...</h2>
+					<p>
+					<hr>
+					<a href="http://github.com/gwoplock"><h2> projects </h2></a>
+					<ul>
+						<li>
+							<a href="http://github.com/gwoplock/ExOS">ExOS</a>
+							<p> &nbsp;&nbsp;&nbsp;&nbsp; An OS
+						</li>
+						<li>
+							<a href="http://github.com/gwoplock/coldbrew">Coldbrew</a>
+							<p> &nbsp;&nbsp;&nbsp;&nbsp; A package manager
+						</li>
+						<li>
+							<a href="http://github.com/gwoplock/gwoplock.github.io">This 90's webpage</a>
+							<p> &nbsp;&nbsp;&nbsp;&nbsp; Aren't I a great webdev? But hey, no* JS errors...
+						</li>
+					</ul>
+				</td>
+				<td>
+					<p>
+					<table cellpadding="10px">
+						<tr>
+							<td>
+								<img src="img/hot.gif"/>
+							</td>
+						<tr>
+
+						</tr>
+						<td>
+							<center><img src="img/thanks.gif"/></center>
+						</td>
+						</tr>
+					</table>
+					</p>
+				</td>
+			</tr>
+		</table>
+
 	</body>
 </html>
